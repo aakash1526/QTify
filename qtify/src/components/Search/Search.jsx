@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import styles from "./Search.module.css";
 import { ReactComponent as SearchIcon } from "../../assets/Search icon.svg";
 import { useAutocomplete } from "@mui/base/useAutocomplete";
@@ -100,5 +100,30 @@ function Search({ searchData, placeholder }) {
     </div>
   );
 }
+
+export default Search;*/
+
+import React from 'react';
+import styles from "./Search.module.css";
+import { ReactComponent as SearchIcon } from "../../assets/Search icon.svg";
+
+const Search = ({ placeholder, searchData }) => {
+  return (
+    <div>
+      <form className={styles.wrapper}>
+        <input 
+          className={styles.search} 
+          placeholder={placeholder} 
+          onChange={(e) => searchData(e.target.value)}
+        />
+        <div>
+          <button className={styles.searchButton} type='submit'>
+            <SearchIcon />
+          </button>
+        </div>
+      </form>
+    </div>
+  );
+};
 
 export default Search;

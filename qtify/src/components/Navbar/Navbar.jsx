@@ -6,6 +6,7 @@ import Search from "../Search/Search";
 import styles from "./Navbar.module.css";
 //import FeedbackIcon from "../../assets/feedback- icon.png";
 
+
 function Navbar({ searchData }) {
   return (
     <nav className={styles.navbar}>
