@@ -1,0 +1,49 @@
+/*:root {
+    --button-bg-color: black;
+    --button-text-color: #00ff00;
+  }
+  
+  .button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+  }*/
+  :root {
+    --color-black: #000000;
+    --color-green: #1DB954; /* Replace with the actual green color code from the Figma file */
+  }
+  
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-black);
+    color: var(--color-green);
+    border: none;
+    border-radius: 8px; /* Adjust as needed */
+    padding: 10px 20px; /* Adjust as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--color-green);
+    color: var(--color-black);
+  }
+  
+  .icon {
+    margin-right: 8px; /* Adjust as needed */
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+  }
+  
+  
